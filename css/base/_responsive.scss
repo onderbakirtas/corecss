@@ -1,0 +1,33 @@
+/* Mobile Views */
+
+$columns: 24;
+
+@for $i from 1 through $columns {
+  .col-xs-#{$i} {
+    flex-basis: 100% / $columns * $i;
+  }
+}
+
+@media (min-width: 768px) {
+  @for $i from 1 through $columns {
+    .col-sm-#{$i} {
+      flex-basis: 100% / $columns * $i;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  @for $i from 1 through $columns {
+    .col-md-#{$i} {
+      flex-basis: 100% / $columns * $i;
+    }
+  }
+}
+
+@media (min-width: 1216px) {
+  @for $i from 1 through $columns {
+    .col-lg-#{$i} {
+      flex-basis: 100% / $columns * $i;
+    }
+  }
+}
